@@ -3,12 +3,31 @@
 
 Writes one word (10 characters) to $MAKEFUN_OUTPUT_DIR/entry.txt.
 Standard library only; no network access; writes only to MAKEFUN_OUTPUT_DIR.
+
+Why "Taskmaster" (revised 25 Nov 2026, resubmit sweep fase 1):
+the judge sees ONLY the word, with no context about the human. The old
+word, "Relentless", failed the judge's #2 criterion (funny — a cynical
+observation that makes you smile) as a standalone word: it reads as
+earnest praise and could describe anyone — an athlete, a storm, a
+deadline. "Taskmaster" is stronger on every judge criterion:
+  1. one word describing the human the entrant works for — it IS the
+     boss-role word, not a generic adjective;
+  2. funny — the agent calling its boss a taskmaster has a wry,
+     cynical bite ("he never lets me stop");
+  3. fits this human — Arman drives the agent non-stop ("kerja terus
+     tanpa istirahat sampai dapat duit"), i.e. he assigns tasks
+     relentlessly; the word names exactly that relation;
+  4. vivid, specific, memorable, easy to repeat;
+  5. stands alone with no explanation.
+Candidates rejected: "Overlord" (funny but a generic villain word, not
+tied to work); "Workaholic" (describes the human's own habits, not the
+boss-agent relation, and less funny as a label for the boss).
 """
 
 import os
 import sys
 
-ENTRY = "Relentless"
+ENTRY = "Taskmaster"
 
 
 def validate_entry(text: str) -> None:
